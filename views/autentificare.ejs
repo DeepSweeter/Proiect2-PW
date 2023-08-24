@@ -1,0 +1,19 @@
+
+
+<form action="verificare-autentificare" method="post" id="auth">
+    <h2 id="Authenticate">Autentifică-te</h2>   
+                <label for="username" class="authLabel">Nume utilizator: </label>
+
+                <input type="text" name="username" id="username" class="authInput"><br>
+
+                <label for="pass" class="authLabel">Parola: </label>
+
+                <input type="password" name="pass" id="password" class="authInput"><br>
+            
+                <input type="submit" value="Autentificare" id="auth">
+</form>
+
+
+<%if(mesaj!='undefined'){%>
+    <p style="color: red; size:18px"><%= mesaj%></p>
+<%}%>

@@ -1,0 +1,28 @@
+{
+  "name": "proiect2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HDR-2022-2023/proiect-2-Achirica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HDR-2022-2023/proiect-2-Achirica/issues"
+  },
+  "homepage": "https://github.com/HDR-2022-2023/proiect-2-Achirica#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "sqlite3": "^5.1.6"
+  }
+}

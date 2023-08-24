@@ -1,0 +1,15 @@
+<br><br>
+<% if(user != undefined){%>
+    <h1 id="User">Autentificat ca <%= user%>!</h1>
+    <form method="post" action="delogare">
+        <div id="Logout">
+        <input type="submit" value="Logout" id ="Logout">
+    </div>
+    </form>
+
+
+
+<% } %>
+
+<h3 id="CorrectAnswears">Întrebări corecte: <%=raspunsuri%></h3>
+

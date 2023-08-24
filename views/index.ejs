@@ -1,0 +1,58 @@
+<% if(user != undefined){%>
+    <h1 id="User">Autentificat ca <%= user%>!</h1>
+    <form method="post" action="delogare">
+        <div id="Logout">
+        <input type="submit" value="Logout" id="Logout">
+        </div>
+    </form>
+
+    <h2 id="Produse">Produse</h2>
+
+    <table id="produse" align="center">
+        <thead>
+            <tr>
+                <td>Imagine</td>
+                <td>Nume produs</td>
+                <td>Pret</td>
+                <% if(user){ %> 
+                <td>Adauga in cos</td>
+                <% } %> 
+            </tr>
+        </thead>
+        <tbody>
+            <% elemente.forEach(elem => { %>
+                <tr>
+                    <td><img src="<%=elem.IMAGINE%>" alt="<%=elem.NUME_PRODUS%>" class="imgTabel" height="250px" width="250px"></td>
+                    <td><%= elem.NUME_PRODUS %></td>
+                    <td><%= elem.PRET%></td>
+                    <% if(user){ %> 
+                    <td><form action="adaugare-cos" method="post">
+                       <input type="hidden" name="id" value="<%=elem.ID%>">
+                       <button type="submit" class="addBtn">Adauga in cos</button>
+                    </form></td> <% } %> 
+                    </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+
+<%} else { %>
+<a href="autentificare" id="toAuth">Autentificare</a>
+<% } %>
+
+
+<% if(user != undefined){%>
+    <% if(user == "admin"){%>
+        <div class="BottomButtons">
+        <form method="post" action="creare-bd">
+            <input type="submit" value="Creare BD" class="BottomButtons">
+        </form>
+        <form method="post" action="inserare-bd">
+            <input type="submit" value="Încărcare BD" class="BottomButtons">
+        </form>
+<% } %>
+<% } %>
+<form method="get" action="vizualizare-cos">
+    <input type="submit" value="Vizualizeaza cos" class="BottomButtons">
+</form>
+</div>

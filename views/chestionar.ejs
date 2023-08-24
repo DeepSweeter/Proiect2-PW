@@ -1,0 +1,29 @@
+<!-- <link rel="stylesheet" type="text/css" href="css/stil.css"> -->
+<h2 style="text-align: center; font-size: 40px;" id="Chestionar">Chestionar</h2>
+<% if(user != undefined){%>
+    <h1 id="User">Autentificat ca <%= user%>!</h1>
+    <form method="post" action="delogare">
+        <div id="Logout">
+        <input type="submit" value="Logout" id="Logout">
+        </div>
+    </form>
+
+
+<%}%>
+<form action="rezultat-chestionar" method="post" class="formChestionar">
+    <fieldset>
+    <%for (var i = 0; i < intrebari.length; i++){%>
+    <lable>Întrebare: </lable> <%= intrebari[i].intrebare %>
+    <br>
+    <% 
+        for(var j = 0; j < intrebari[i].variante.length; j++){
+    %>
+        <input type="radio" name="<%= intrebari[i].intrebare%>" value="<%= j %>"><%= intrebari[i].variante[j]%><br>
+
+        <%}%>
+    <%}%>
+    
+    <input type="submit" value="Trimite răspunsuri">
+</fieldset>
+</form>
+

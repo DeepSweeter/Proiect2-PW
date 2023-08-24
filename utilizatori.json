@@ -1,0 +1,38 @@
+[
+    {   
+        "utilizator": "test",
+        "parola": "test",
+        "email": "test@gmail.com",
+        "rol": "user"
+    },
+    {   
+        "utilizator": "Andrei",
+        "parola": "Andrei",
+        "email": "Andrei@gmail.com",
+        "rol": "admin"
+    }, 
+    {   
+        "utilizator": "admin",
+        "parola": "admin",
+        "email": "admin@gmail.com",
+        "rol": "admin"
+    }, 
+    {   
+        "utilizator": "hello",
+        "parola": "hello",
+        "email": "hellp@gmail.com",
+        "rol": "user"
+    }, 
+    {   
+        "utilizator": "data",
+        "parola": "data",
+        "email": "data@gmail.com",
+        "rol": "user"
+    }, 
+    {   
+        "utilizator": "nopass",
+        "parola": "",
+        "email": "nopass@gmail.com",
+        "rol": "user"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {   
+    "intrebare": "Când a fost construit primul cuptor cu microunde din lume?",
+    "variante": ["1987", "1920", "1890", "1947"],
+    "corect": 3
+    },
+    {   
+    "intrebare": "Ce substanță foloseau înainte frigiderele?",
+    "variante": ["Clorofluorocarburi(CFC)", "Trinitrat de toluen(TNT)", "Apă(H2O)", "Nitroglicerina(C3H5N3O9)"],
+    "corect": 0
+    },
+    {   
+    "intrebare": "Care este cea mai populară firmă de electrocanisce global?",
+    "variante": ["LG", "Whirpool", "KitchenAid", "Phillips"],
+    "corect": 2
+    },
+    {   
+    "intrebare": "În ce an a apărut primul frigider smart?",
+    "variante": ["2013", "2009", "1997", "2000"],
+    "corect": 3
+    }
+
+]

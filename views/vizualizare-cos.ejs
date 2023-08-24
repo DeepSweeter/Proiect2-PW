@@ -1,0 +1,22 @@
+<h1 id="vizCos">Vizualizare cos</h1>
+<div class="centerDiv" align="center">
+    
+    <table id="produse">
+        <thead>
+            <tr>
+                <td>Imagine</td>
+                <td>Nume produs</td>
+                <td>Pret</td>
+            </tr>
+        </thead>
+        <tbody>
+            <% elemente.forEach(elem => { %>
+                <tr>
+                    <td><img src="<%=elem.IMAGINE%>" alt="<%=elem.NUME_PRODUS%>" class="imgTabel" height="250px" width="250px"></td>
+                    <td><%= elem.NUME_PRODUS %></td>
+                    <td><%= elem.PRET%></td>
+                    </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    </div>
